@@ -102,3 +102,8 @@ $(".bg-light-gary ul > li > a").each(function () {
     $(this).addClass("active");
   }
 });
+$(".header .flex-sm-gap  a").each(function () {
+  if (window.location.href.includes($(this).attr("href"))) {
+    $(this).addClass("active");
+  }
+});

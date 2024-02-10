@@ -219,7 +219,7 @@
                                     <div class="flex-bet show-page-m mb-2">
                                         <a href="offres.html" class="font600">تعديل على الفيديوهات من ناحية القص
                                             والتعديل على النصوص داخل الفيديو</a>
-                                            <a href="add-offer.html" class="main-btn up lg">+ اضف عرضك</a>
+                                            <a href="add-offer.html" class="main-btn up ">+ اضف عرضك</a>
 
                                     </div>
                                     <p class="provider-p regular mb-0">سيكون هناك ملفين ملف يحتوي على أسئلة قديمة وملف
@@ -261,7 +261,7 @@
                                     <div class="flex-bet show-page-m mb-2">
                                         <a href="offres.html" class="font600">تعديل على الفيديوهات من ناحية القص
                                             والتعديل على النصوص داخل الفيديو</a>
-                                            <a href="add-offer.html" class="main-btn up lg">+ اضف عرضك</a>
+                                            <a href="add-offer.html" class="main-btn up ">+ اضف عرضك</a>
 
                                     </div>
                                     <p class="provider-p regular mb-0">سيكون هناك ملفين ملف يحتوي على أسئلة قديمة وملف
@@ -303,7 +303,7 @@
                                     <div class="flex-bet show-page-m mb-2">
                                         <a href="offres.html" class="font600">تعديل على الفيديوهات من ناحية القص
                                             والتعديل على النصوص داخل الفيديو</a>
-                                            <a href="add-offer.html" class="main-btn up lg">+ اضف عرضك</a>
+                                            <a href="add-offer.html" class="main-btn up ">+ اضف عرضك</a>
 
                                     </div>
                                     <p class="provider-p regular mb-0">سيكون هناك ملفين ملف يحتوي على أسئلة قديمة وملف
@@ -449,7 +449,7 @@
                                 </div>
 
                             </div>
-                            <button type="reset"  class="main-btn up w-100 light-filter">تصفية البحث</button>
+                            <button type="reset"  class="main-btn up w-100 light-filter font-bold">تصفية البحث</button>
                         </form>
                     </div>
                 </div>
@@ -529,15 +529,17 @@
         for (let i = 0; i < getMore.length; i++) {
             let oldPara = getMore[i].closest('.provider-row').querySelector('.provider-p').innerText
             let newPara = getMore[i].closest('.provider-row').querySelector('.provider-p').innerText.substring(0, 200)
-            if (getMore[i].closest('.provider-row').querySelector('.provider-p').innerHTML.length > 200) {
-                getMore[i].classList.add('d-block');
-                getMore[i].closest('.provider-row').querySelector('.provider-p').innerHTML = newPara;
+            // console.log(getMore[i].closest('.provider-row').querySelector('.provider-p').innerHTML.length);
+            // console.log(oldPara)    ;
+            // if (getMore[i].closest('.provider-row').querySelector('.provider-p').innerHTML.length > 200) {
+            //     getMore[i].classList.add('d-block');
+            //     getMore[i].closest('.provider-row').querySelector('.provider-p').innerHTML = newPara;
 
-            } else {
+            // } else {
 
-                getMore[i].classList.add('d-none');
-                getMore[i].closest('.provider-row').querySelector('.provider-p').innerHTML = oldPara;
-            }
+            //     // getMore[i].classList.add('d-none');
+            //     getMore[i].closest('.provider-row').querySelector('.provider-p').innerHTML = oldPara;
+            // }
 
             getMore[i].addEventListener('click', function () {
                 this.closest('.provider-row').querySelector('.get-less').classList.add('d-block')
@@ -550,11 +552,11 @@
         for (let i = 0; i < getLess.length; i++) {
             let oldPara = getLess[i].closest('.provider-row').querySelector('.provider-p').innerText
             let newPara = getLess[i].closest('.provider-row').querySelector('.provider-p').innerText.substring(0, 200)
-            if (getLess[i].closest('.provider-row').querySelector('.provider-p').innerHTML.length < 200) {
-                getLess[i].classList.add('d-block');
-                getLess[i].closest('.provider-row').querySelector('.provider-p').innerHTML = oldPara;
+            // if (getLess[i].closest('.provider-row').querySelector('.provider-p').innerHTML.length < 200) {
+            //     getLess[i].classList.add('d-block');
+            //     getLess[i].closest('.provider-row').querySelector('.provider-p').innerHTML = oldPara;
 
-            }
+            // }
 
             getLess[i].addEventListener('click', function () {
                 this.closest('.provider-row').querySelector('.get-more').classList.add('d-block')

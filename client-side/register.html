@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/select2.css" />
+    <link rel="stylesheet" href="flag/build/css/intlTelInput.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="stylesheet" href="css/rtl-style.css" /> -->
     <title>Rework Website</title>
@@ -122,6 +123,31 @@
                                         </div>
                                     </div>
                                     <div class="col-12 mb-4">
+                                        <div class="flex-input-num w-100">
+                                            <div class="main-input-cont">
+                                                <input type="text" id="number-country" hidden value="" />
+                                               
+                                                <input id="telephone"   type="tel" 
+                                                    class=" input-phone-sm auth-main-phone" />
+                                            </div>
+                                            <div class="main-input-cont  w-100">
+                                       
+                                                <input   type="number"
+                                                 placeholder="رقم الهاتف"
+                                                    class="main-input" />
+                                                    <div class="abs-icon-input regular phone-swicher">تفعيل</div>
+                                            </div>
+                                
+                                        </div>
+                                        <div class="drop-show-phones">
+                                            <input type="text" class="main-input slide-input" placeholder="ادخل الرمز المرسل الى رقم هاتفك هنا ..">
+                                            <div class="send-btn-otp">
+                                                <i class="fa-regular fa-paper-plane"></i>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-4">
                                         <div class="main-input-cont ">
                                             <input type="text" placeholder="اسم المستخدم" class="main-input" />
                                         </div>
@@ -217,6 +243,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/select2.js"></script>
+    <script src="flag/build/js/intlTelInput.min.js"></script>
     <script src="js/main.js"></script>
     <!--call select2 single-->
     <script>
@@ -283,6 +310,29 @@
 
       }
   </script>
+      <!--call iti-->
+      <script>
+        var input = document.querySelector("#telephone");
+        let iti = window.intlTelInput(input, {
+            autoPlaceholder: "ادخل",
+            customPlaceholder: "kggg",
+            initialCountry: "sa",
+            separateDialCode: true,
+        });
+
+        $("#number-country").val(iti.getSelectedCountryData().dialCode);
+
+        input.addEventListener("countrychange", function () {
+            $("#number-country").val(iti.getSelectedCountryData().dialCode);
+            console.log(iti.getSelectedCountryData().dialCode);
+        });
+    </script>
+    <script>
+           $('.drop-show-phones').hide()
+        $('.phone-swicher').on('click' , function(){
+            $('.drop-show-phones').slideToggle()
+        })
+    </script>
 </body>
 
 </html>

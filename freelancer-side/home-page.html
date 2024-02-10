@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/select2.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/ltr-style.css" />
+    <!-- <link rel="stylesheet" href="css/ltr-style.css" /> -->
     <title>Rework Website</title>
 </head>
 
@@ -58,11 +58,7 @@
                         <img src="imgs/profile (1).png" class="not-active-img" alt="img">
                         <div>حسابي</div>
                     </a></li>
-                <li><a href="myProjects.html" class="flex-dbl-sm link-logged"><img class="active-img d-none"
-                            src="imgs/clipboard-text (3).png" alt="img">
-                        <img class="not-active-img" src="imgs/clipboard-text (2).png" alt="img">
-                        <div>مشاريعي</div>
-                    </a></li>
+
                 <li><a href="see-projects.html" class="flex-dbl-sm link-logged"><img class="active-img d-none"
                             src="imgs/discover (1).png" alt="img">
                         <img class="not-active-img" src="imgs/discover.png" alt="img">
@@ -72,6 +68,11 @@
                             src="imgs/dollar-square (1).png" alt="img">
                         <img class="not-active-img" src="imgs/dollar-squarehead.png" alt="img">
                         <div>الرصيد</div>
+                    </a></li>
+                <li><a href="Myoffers.html" class="flex-dbl-sm link-logged"><img class="active-img d-none"
+                            src="imgs/clipboard-text (3).png" alt="img">
+                        <img class="not-active-img" src="imgs/clipboard-text (2).png" alt="img">
+                        <div>عروضي</div>
                     </a></li>
                 <li><a href="workStation.html" class="flex-dbl-sm link-logged"><img class="active-img d-none"
                             src="imgs/pen-tool (2).png" alt="img">
@@ -88,10 +89,16 @@
                 <a href="login.html"><i class="fa-solid fa-user"></i></a>
               </div>
             </div> -->
+                <a href="search.html" class="logged-ico-main">
+                    <img src="imgs/Frameس 121.png" class="ser-img-nav not-active-img" alt="">
+                    <img src="imgs/Frame 120.png" class="active-img d-none ser-img-nav" alt="">
+                </a>
                 <a href="chat.html" class="logged-ico">
-                    <img src="imgs/message (1).png" alt="">
+                    <img src="imgs/message (1).png" class="not-active-img" alt="">
+                    <img src="imgs/messسage (1).png" class="active-img d-none" alt="">
                     <div class="dot-num regular">22</div>
                 </a>
+
                 <div class="logged-ico noti-btn">
                     <img src="imgs/notification-bing.png" alt="">
                     <div class="dot-num regular">3</div>
@@ -152,7 +159,15 @@
 
                     </div>
                     <ul class="dropProfile">
-                        <div class="pad-gray">
+                        <div class="pad-gray mb-2">
+                            <li>
+                                <a href="profile.html" class="flex-in-drop">
+                                    <div class="noti-i-cont">
+                                        <img src="imgs/Frame 271.png" alt="">
+                                    </div>
+                                    <div class="regular">عرض الصفحة الشخصية</div>
+                                </a>
+                            </li>
                             <li>
                                 <a href="profile.html" class="flex-in-drop">
                                     <div class="noti-i-cont">
@@ -170,7 +185,29 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="login.html" class="flex-in-drop">
+                                <div class="flex-lang-btn regular lang-swicher">
+                                    <div class="flex-dbl-sm">
+                                        <img src="imgs/translate.png" alt="img">
+                                        <div>اللغة</div>
+                                    </div>
+                                    <div class="flex-dbl-sm">
+                                        <div>العربية</div>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="langs-slide px-3">
+                                    <a href="#" class="flex-dbl-sm mb-2">
+                                        <img src="imgs/dVector.png" alt="">
+                                        <div class="regular">العربية</div>
+                                    </a>
+                                    <a href="#" class="flex-dbl-sm mb-2">
+                                        <img src="imgs/Vecetor (1).png" alt="">
+                                        <div class="regular">الانجليزية</div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="login.html" class="flex-in-drop top-bor">
                                     <div class="noti-i-cont">
                                         <img src="imgs/logout.png" alt="img">
                                     </div>
@@ -178,6 +215,23 @@
                                 </a>
                             </li>
                         </div>
+                        <a href="#" class="main-btn up w-100 bg-light-gr font18 mt-2 mb-2">+ وظف مستقل الان!</a>
+                        <div class="pad-gray p-2">
+                            <div class="flex-bet">
+                                <img src="imgs/arrow-swap-horizontal.png" alt="">
+                                <div class="flex-dbl-sm ltr">
+                                    <img src="imgs/Frame 271.png" alt="">
+                                    <div class="big-screen">
+    
+                                        <div class="font-bold">م. محمد سامي</div>
+                                        <div class="regular font14">
+                                            Client
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   
 
                     </ul>
 
@@ -238,8 +292,7 @@
                                 </div>
                             </div>
                             <div class="flex-group-me mb-3">
-                                <a href="add-new-project.html" class="main-btn up w-100 bg-light-gr font18">+ اضافة
-                                    مشروع جديد</a>
+                                <a href="#" class="main-btn up w-100 bg-light-gr font18 mt-2">+ وظف مستقل الان!</a>
                             </div>
                             <div class="checks-cont">
                                 <!-- add pointer none if checked -->
@@ -779,6 +832,11 @@
         });
     }
 </script>
-
+<script>
+    $('.langs-slide').hide()
+    $('.lang-swicher').on('click', function () {
+        $('.langs-slide').slideToggle()
+    })
+</script>
 
 </html>
