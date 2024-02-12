@@ -222,7 +222,7 @@
                                 <div class="flex-dbl-sm ltr">
                                     <img src="imgs/Frame 271.png" alt="">
                                     <div class="big-screen">
-    
+
                                         <div class="font-bold">م. محمد سامي</div>
                                         <div class="regular font14">
                                             Client
@@ -231,7 +231,7 @@
                                 </div>
                             </div>
                         </div>
-                   
+
 
                     </ul>
 
@@ -292,7 +292,8 @@
                                 </div>
                             </div>
                             <div class="flex-group-me mb-3">
-                                <a href="#" class="main-btn up w-100 bg-light-gr font18 mt-2">+ وظف مستقل الان!</a>
+                                <a href="#" data-bs-target="#switchAccount"
+                                data-bs-toggle="modal" class="main-btn up w-100 bg-light-gr font18 mt-2">+ وظف مستقل الان!</a>
                             </div>
                             <div class="checks-cont">
                                 <!-- add pointer none if checked -->
@@ -610,6 +611,34 @@
         </div>
     </div>
     <!--end footer-->
+
+    <!-- switchAccount  Modal -->
+    <div class="modal fade" id="switchAccount" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="all-modal-content">
+                    <div class="modal-body-main">
+                        <div class="mt-3">
+                            <div class="flex-bet mb-2">
+                                <img src="imgs/InputField.png" class="switch-img"  alt="img">
+                                <img src="imgs/arrow-swap-horizontal (1).png"  alt="img">
+                                <img src="imgs/InputField (1).png" class="switch-img"  alt="img">
+                            </div>
+                            <h2 class="text-center mb-2 mt-3">أنت على وشك انشاء حساب صاحب أعمال!</h2>
+                            <p class="regular text-center mb-2">سنقوم الان بانشاء حساب صاحب اعمال باستخدام نفس بيانات حسابك وسيكون بامكانك التنقل بين الحسابين بسهولة عند الضغط على صورتك الشخصية في القائمة العلوية!</p>
+                        </div>
+                        <div class="mt-3">
+                            <button class="main-btn up w-100 mb-2" data-bs-dismiss="modal" 
+                               >ابدء الان كصاحب أعمال!</button>
+                            <button class="main-btn up regular w-100 bg-trans" data-bs-dismiss="modal"
+                                aria-label="Close">تراجع</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- pay  Modal -->
     <div class="modal fade" id="payModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">

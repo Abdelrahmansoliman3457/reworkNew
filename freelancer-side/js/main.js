@@ -107,3 +107,20 @@ $(".header .flex-sm-gap  a").each(function () {
     $(this).addClass("active");
   }
 });
+
+// drop lang
+let myBtndropLang = document.querySelector(".lang-sw-btn");
+let dropLang = document.querySelector(".dropLang");
+
+if (dropLang) {
+  myBtndropLang.addEventListener("click", function (e) {
+    dropLang.classList.toggle("show-drop");
+    e.stopPropagation();
+  });
+  document.body.addEventListener("click", function () {
+    dropLang.classList.remove("show-drop");
+  });
+  dropLang.addEventListener("click", function (e) {
+    e.stopPropagation();
+  });
+}

@@ -90,6 +90,24 @@ if (drop) {
   });
 }
 
+// drop lang
+let myBtndropLang = document.querySelector(".lang-sw-btn");
+let dropLang = document.querySelector(".dropLang");
+
+if (dropLang) {
+  myBtndropLang.addEventListener("click", function (e) {
+    alert("ak");
+    dropLang.classList.toggle("show-drop");
+    e.stopPropagation();
+  });
+  document.body.addEventListener("click", function () {
+    dropLang.classList.remove("show-drop");
+  });
+  dropLang.addEventListener("click", function (e) {
+    e.stopPropagation();
+  });
+}
+
 // //  add active class to cuurent link
 $(".links > li > a").each(function () {
   if (window.location.href.includes($(this).attr("href"))) {

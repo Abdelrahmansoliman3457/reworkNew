@@ -277,6 +277,10 @@ img.mid-screen {
     .layer-filter.show-me {
       transform: translateX(0px);
     }
+    .dropLang {
+      right: 0;
+      left: unset;
+    }
   }
 }
 .fa-angle-left {
